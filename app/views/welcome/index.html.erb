@@ -1,0 +1,20 @@
+<h1>Index</h1>
+<h3>My homeland is <%=@homeland%></h3>
+
+<ul>
+<% @countries.each do |country| %>
+	<li><%= country %></li>
+<%end%>
+</ul>
+
+<% @images.each do |display| %>
+<%=image_tag display%>
+<%end%>
+
+<%= image_tag 'Menu UI.png', alt: 'Menu', id: 'UI', width: "300", class: 'screenshot'%><br>
+<%= image_tag 'shaq.jpeg'%> <%= image_tag 'shaq2.jpeg'%>
+
+
+
+
+<p>If this were a book, this section would be in the front</p>

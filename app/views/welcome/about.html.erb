@@ -1,0 +1,17 @@
+<style>
+body {
+	background: <%=@color%>;
+}
+</style>
+
+<h1>About</h1>
+
+<h3>I want shoes that are <%=@color%> and size <%=@size%></h3>
+
+<% if @size>12%>
+<p>Man, you got big ol feet<p>
+<% else %>
+<p>You have pretty normal feet<p>
+<%end%>
+
+<p>This is where the about section lives</p>
